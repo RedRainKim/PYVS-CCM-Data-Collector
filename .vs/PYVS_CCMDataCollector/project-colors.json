@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4a28f788-0472-4d9d-aa2b-8b5a5fe817ce": {
+      "ProjectGuid": "4a28f788-0472-4d9d-aa2b-8b5a5fe817ce",
+      "DisplayName": "PYVS_CCMDataCollector",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
