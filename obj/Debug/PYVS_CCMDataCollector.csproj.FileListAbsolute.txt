@@ -10,3 +10,104 @@ D:\01.PYVINA_Work\12. 시스템\12. L2 Dev\PYVS_CCMDataCollector\obj\Debug\PYVS_
 D:\01.PYVINA_Work\12. 시스템\12. L2 Dev\PYVS_CCMDataCollector\obj\Debug\PYVS_CCMDataCollector.csproj.CopyComplete
 D:\01.PYVINA_Work\12. 시스템\12. L2 Dev\PYVS_CCMDataCollector\obj\Debug\PYVS_CCMDataCollector.exe
 D:\01.PYVINA_Work\12. 시스템\12. L2 Dev\PYVS_CCMDataCollector\obj\Debug\PYVS_CCMDataCollector.pdb
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\bin\Debug\NLog.config
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\bin\Debug\PYVS_CCMDataCollector.exe.config
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\bin\Debug\PYVS_CCMDataCollector.exe
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\bin\Debug\PYVS_CCMDataCollector.pdb
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\bin\Debug\NLog.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\bin\Debug\S7.Net.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\bin\Debug\NLog.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\bin\Debug\S7.Net.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\obj\Debug\PYVS_CCMDataCollector.csproj.AssemblyReference.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\obj\Debug\PYVS_CCMDataCollector.csproj.SuggestedBindingRedirects.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompileInputs.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\obj\Debug\PYVS_CCMDataCollector.csproj.CopyComplete
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\obj\Debug\PYVS_CCMDataCollector.exe
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addTundish\obj\Debug\PYVS_CCMDataCollector.pdb
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\bin\Debug\NLog.config
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\bin\Debug\PYVS_CCMDataCollector.exe.config
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\bin\Debug\PYVS_CCMDataCollector.exe
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\bin\Debug\PYVS_CCMDataCollector.pdb
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\bin\Debug\NLog.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\bin\Debug\S7.Net.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\bin\Debug\NLog.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\bin\Debug\S7.Net.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\obj\Debug\PYVS_CCMDataCollector.csproj.SuggestedBindingRedirects.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompileInputs.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\obj\Debug\PYVS_CCMDataCollector.csproj.CopyComplete
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\obj\Debug\PYVS_CCMDataCollector.exe
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addCutLength\obj\Debug\PYVS_CCMDataCollector.pdb
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\bin\Debug\NLog.config
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\bin\Debug\PYVS_CCMDataCollector.exe.config
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\bin\Debug\PYVS_CCMDataCollector.exe
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\bin\Debug\PYVS_CCMDataCollector.pdb
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\bin\Debug\NLog.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\bin\Debug\S7.Net.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\bin\Debug\NLog.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\bin\Debug\S7.Net.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\obj\Debug\PYVS_CCMDataCollector.csproj.AssemblyReference.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\obj\Debug\PYVS_CCMDataCollector.csproj.SuggestedBindingRedirects.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompileInputs.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\obj\Debug\PYVS_CCMDataCollector.csproj.CopyComplete
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\obj\Debug\PYVS_CCMDataCollector.exe
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addMoldWaterPressure_20230201\obj\Debug\PYVS_CCMDataCollector.pdb
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\NLog.config
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\PYVS_CCMDataCollector.exe.config
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\PYVS_CCMDataCollector.exe
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\PYVS_CCMDataCollector.pdb
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\NLog.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\S7.Net.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\System.Buffers.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\System.Memory.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\NLog.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\S7.Net.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\System.Buffers.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\System.Memory.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\obj\Debug\PYVS_CCMDataCollector.csproj.AssemblyReference.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\obj\Debug\PYVS_CCMDataCollector.csproj.SuggestedBindingRedirects.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompileInputs.cache
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\obj\Debug\PYVS_CCMDataCollector.csproj.CopyComplete
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\obj\Debug\PYVS_CCMDataCollector.exe
+D:\01.PYVINA_Work\Dev\PYVS_CCMDataCollector_addLadleOpenClose_20230526\obj\Debug\PYVS_CCMDataCollector.pdb
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\NLog.config
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\PYVS_CCMDataCollector.exe.config
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\PYVS_CCMDataCollector.exe
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\PYVS_CCMDataCollector.pdb
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\NLog.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\S7.Net.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\System.Buffers.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\System.Memory.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\NLog.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\S7.Net.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\System.Buffers.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\System.Memory.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\obj\Debug\PYVS_CCMDataCollector.csproj.AssemblyReference.cache
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\obj\Debug\PYVS_CCMDataCollector.csproj.SuggestedBindingRedirects.cache
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompileInputs.cache
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\obj\Debug\PYVS_CCMDataCollector.csproj.CopyComplete
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\obj\Debug\PYVS_CCMDataCollector.exe
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_addmoredata_20231005\obj\Debug\PYVS_CCMDataCollector.pdb
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\NLog.config
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\PYVS_CCMDataCollector.exe.config
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\PYVS_CCMDataCollector.exe
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\PYVS_CCMDataCollector.pdb
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\NLog.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\S7.Net.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\System.Buffers.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\System.Memory.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\NLog.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\S7.Net.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\System.Buffers.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\System.Memory.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.csproj.AssemblyReference.cache
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.csproj.SuggestedBindingRedirects.cache
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompileInputs.cache
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.csproj.CopyComplete
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.exe
+D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.pdb
