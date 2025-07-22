@@ -249,13 +249,15 @@ namespace PYVS_CCMDataCollector
                     cutLengthData.lengthLastcut = ((uint)plc.Read("DB244.DBD414")).ConvertToFloat();        //Last Cut Length [REAL]
                     cutLengthData.lengthCompensation = ((ushort)plc.Read("DB244.DBW424")).ConvertToShort(); //Compensation Length [INT]
                     cutLengthData.weight = ((uint)plc.Read("DB244.DBD218")).ConvertToFloat();               //Weight [REAL]
+                    cutLengthData.lengthMeasured = ((uint)plc.Read("DB244.DBD6")).ConvertToFloat();         //Measured Length [REAL]
                 }
                 else
                 {
                     cutLengthData.lengthTarget = ((uint)plc.Read("DB244.DBD494")).ConvertToInt();           //Target Length [DINT]
                     cutLengthData.lengthLastcut = ((uint)plc.Read("DB244.DBD502")).ConvertToFloat();        //Last Cut Length [REAL]
                     cutLengthData.lengthCompensation = ((ushort)plc.Read("DB244.DBW512")).ConvertToShort(); //Compensation Length [INT]
-                    cutLengthData.weight = ((uint)plc.Read("DB244.DBD330")).ConvertToFloat();               //Weight [REAL???]
+                    cutLengthData.weight = ((uint)plc.Read("DB244.DBD330")).ConvertToFloat();               //Weight [REAL]
+                    cutLengthData.lengthMeasured = ((uint)plc.Read("DB244.DBD12")).ConvertToFloat();         //Measured Length [REAL]
 
                 }
                 _log.Debug("Scale #{0} - Target Length : {1}", v, cutLengthData.lengthTarget);
@@ -911,7 +913,7 @@ namespace PYVS_CCMDataCollector
                 msgHead += DateTime.Now.ToString("yyyyMMddHHmmss"); //sending date time
                 msgHead += "L3SentryCCMMAN";                        //send program ID
                 msgHead += "RM20L06_01".PadRight(19);               //EAI IF ID (Queue name)
-                msgHead += "000130".PadRight(31);                   //message length & spare 
+                msgHead += "000135".PadRight(31);                   //message length & spare 
 
                 // Set message - Data
                 msgData += msg.heat.ToString().PadRight(6);         //heat id
@@ -931,8 +933,11 @@ namespace PYVS_CCMDataCollector
                 
                 decData = (int)msg.weight;
                 if (decData < 0) msgData += decData.ToString("D4"); //weight
-                else             msgData += decData.ToString("D5");          
+                else             msgData += decData.ToString("D5");        
                 
+                decData = (int)msg.lengthMeasured;
+                msgData += decData.ToString("D5");                  //Measured length
+
 
                 // Insert database
                 sql = "INSERT INTO TT_L2_L3_NEW (HEADER, DATA, MSG_CODE, INTERFACE_ID) VALUES (" +

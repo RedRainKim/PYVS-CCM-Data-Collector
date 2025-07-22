@@ -126,7 +126,6 @@ D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Buffers.xml
 D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Memory.xml
 D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.csproj.AssemblyReference.cache
-D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.exe.config
 D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompileInputs.cache
 D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCM.7562D0DF.Up2Date
 D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.exe

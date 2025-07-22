@@ -171,6 +171,7 @@
             public double lengthLastcut;
             public short lengthCompensation;
             public double weight;
+            public double lengthMeasured;
 
             public void InitData()
             {
@@ -183,6 +184,7 @@
                 lengthLastcut = 0;
                 lengthCompensation = 0;
                 weight = 0;
+                lengthMeasured = 0;
             }
         }
     }
