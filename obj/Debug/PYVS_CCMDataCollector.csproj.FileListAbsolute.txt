@@ -111,3 +111,23 @@ D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\o
 D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.csproj.CopyComplete
 D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.exe
 D:\01. PYVINA_Work\15. IT Dev\12. L2 Dev\PYVS_CCMDataCollector_Modify_20240708\obj\Debug\PYVS_CCMDataCollector.pdb
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\NLog.config
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\PYVS_CCMDataCollector.exe.config
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\PYVS_CCMDataCollector.exe
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\PYVS_CCMDataCollector.pdb
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\NLog.dll
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\S7.Net.dll
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Buffers.dll
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Memory.dll
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\NLog.xml
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\S7.Net.xml
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Buffers.xml
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Memory.xml
+D:\Dev\PYVS-CCM-Data-Collector\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.csproj.AssemblyReference.cache
+D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.exe.config
+D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompileInputs.cache
+D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCM.7562D0DF.Up2Date
+D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.exe
+D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.pdb

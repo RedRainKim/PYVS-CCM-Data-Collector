@@ -6,6 +6,7 @@ using NLog;
 using S7.Net;
 using static PYVS_CCMDataCollector.Program;
 using System.Xml.Linq;
+using System.Runtime.Remoting.Lifetime;
 
 
 namespace PYVS_CCMDataCollector
@@ -153,154 +154,17 @@ namespace PYVS_CCMDataCollector
                     /////////
                     /// No.1 Scale data
                     ////////                    
-                    //data initialize
-                    cutLengthData.InitData();
-                    cutLengthData.scaleNo = 1;  //#1 scale
-
-                    //Check Heat ID and Strand ID and Sequence No. for scale #1
-                    byte[] heat1 = plc.ReadBytes(DataType.DataBlock, 244, 198, 6);   //Heat ID
-                    cutLengthData.heat = S7.Net.Types.String.FromByteArray(heat1);
-                    cutLengthData.heat.Trim();
-
-                    cutLengthData.strandNo = ((ushort)plc.Read("DB244.DBW216")).ConvertToShort();   //strand no.
-                    cutLengthData.sequenceNo = ((ushort)plc.Read("DB244.DBW214")).ConvertToShort(); //sequence no.
-
-                    heatChange = false; //init
-
-                    _log.Info("Weight scale 1 : heat number check...{0}", cutLengthData.heat.ToString());
-
-                    //Check basic information
-                    if (cutLengthData.heat.Substring(0,1).Equals("V")) //Check Heat ID
-                    {
-                        _log.Info("Scale #1 Information : {0} / {1} / {2}", cutLengthData.heat.ToString(), cutLengthData.strandNo, cutLengthData.sequenceNo);
-
-                        if (cutLengthData.strandNo > 0 && cutLengthData.strandNo < 7) //Check strand number
-                        {
-                            if (cutLengthData.sequenceNo > 0 && cutLengthData.sequenceNo < 99) //Check sequence number
-                            {
-                                //Compare with before sent information
-                                if (scale1LastHeat.ToString() != cutLengthData.heat.ToString())
-                                {
-                                    heatChange = true;
-                                }
-                                else
-                                {
-                                    if (scale1LastStrandNo != cutLengthData.strandNo || scale1LastSequenceNo != cutLengthData.sequenceNo)
-                                    {
-                                        heatChange = true;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    if (heatChange)
-                    {
-                        _log.Info("Scale #1 New SP scaled!!! Start collect data ... ");
-
-                        //Collect data
-                        cutLengthData.lengthTarget = ((uint)plc.Read("DB244.DBD406")).ConvertToInt();           //Target Length [DINT]
-                        cutLengthData.lengthLastcut = ((uint)plc.Read("DB244.DBD414")).ConvertToFloat();        //Last Cut Length [REAL]
-                        cutLengthData.lengthCompensation = ((ushort)plc.Read("DB244.DBW424")).ConvertToShort(); //Compensation Length [INT]
-                        cutLengthData.weight = ((uint)plc.Read("DB244.DBD218")).ConvertToFloat();             //Weight [REAL]
-
-                        _log.Debug("Scale #1 - Target Length : {0}", cutLengthData.lengthTarget);
-                        _log.Debug("Scale #1 - Last Cut Length : {0}", cutLengthData.lengthLastcut);
-                        _log.Debug("Scale #1 - Compensation Length : {0}", cutLengthData.lengthCompensation);
-                        _log.Debug("Scale #1 - Weight : {0}", cutLengthData.weight);
-
-
-                        //data send to MES
-                        if (SendMessage(ref cutLengthData))
-                        {
-                            _log.Info("Data send complete... {0} / {1} / {2}", cutLengthData.heat.ToString(), cutLengthData.strandNo, cutLengthData.sequenceNo);
-
-                            //Update last information
-                            scale1LastHeat = cutLengthData.heat;
-                            scale1LastStrandNo = cutLengthData.strandNo;
-                            scale1LastSequenceNo = cutLengthData.sequenceNo;
-                        }
-
-                    }
-
+                    ProcessCollectScaleData(1);
 
                     /////////
                     /// No.2 Scale data
                     ////////                    
-                    //data initialize
-                    cutLengthData.InitData();
-                    cutLengthData.scaleNo = 2;  //#2 scale
-
-                    //Check Heat ID and Strand ID and Sequence No. for scale #1
-                    byte[] heat2 = plc.ReadBytes(DataType.DataBlock, 244, 310, 6);   //Heat ID
-                    cutLengthData.heat = S7.Net.Types.String.FromByteArray(heat2);
-                    cutLengthData.heat.Trim();
-
-                    cutLengthData.strandNo = ((ushort)plc.Read("DB244.DBW328")).ConvertToShort();
-                    cutLengthData.sequenceNo = ((ushort)plc.Read("DB244.DBW326")).ConvertToShort();
-
-                    heatChange = false; //init
-
-                    _log.Info("Weight scale 2 : heat number check...{0}", cutLengthData.heat.ToString());
-
-                    //Check basic information
-                    if (cutLengthData.heat.Substring(0, 1).Equals("V")) //Check Heat ID
-                    {
-                        _log.Info("Scale #2 Information : {0} / {1} / {2}", cutLengthData.heat.ToString(), cutLengthData.strandNo, cutLengthData.sequenceNo);
-
-                        if (cutLengthData.strandNo > 0 && cutLengthData.strandNo < 7) //Check strand number
-                        {
-                            if (cutLengthData.sequenceNo > 0 && cutLengthData.sequenceNo < 99) //Check sequence number
-                            {
-                                //Compare with before sent information
-                                if (scale2LastHeat.ToString() != cutLengthData.heat.ToString())
-                                {
-                                    heatChange = true;
-                                }
-                                else
-                                {
-                                    if (scale2LastStrandNo != cutLengthData.strandNo || scale2LastSequenceNo != cutLengthData.sequenceNo)
-                                    {
-                                        heatChange = true;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    if (heatChange)
-                    {
-                        _log.Info("Scale #2 New SP scaled!!! Start collect data ... ");
-
-                        //Collect data
-                        cutLengthData.lengthTarget = ((uint)plc.Read("DB244.DBD494")).ConvertToInt();           //Target Length [DINT]
-                        cutLengthData.lengthLastcut = ((uint)plc.Read("DB244.DBD502")).ConvertToFloat();        //Last Cut Length [REAL]
-                        cutLengthData.lengthCompensation = ((ushort)plc.Read("DB244.DBW512")).ConvertToShort(); //Compensation Length [INT]
-                        cutLengthData.weight = ((uint)plc.Read("DB244.DBD330")).ConvertToFloat();             //Weight [REAL???]
-
-                        _log.Debug("Scale #2 - Target Length : {0}", cutLengthData.lengthTarget);
-                        _log.Debug("Scale #2 - Last Cut Length : {0}", cutLengthData.lengthLastcut);
-                        _log.Debug("Scale #2 - Compensation Length : {0}", cutLengthData.lengthCompensation);
-                        _log.Debug("Scale #2 - Weight : {0}", cutLengthData.weight);
-
-                        //data send to MES
-                        if (SendMessage(ref cutLengthData))
-                        {
-                            _log.Info("Data send complete... {0} / {1} / {2}", cutLengthData.heat.ToString(), cutLengthData.strandNo, cutLengthData.sequenceNo);
-
-                            //Update last information
-                            scale2LastHeat = cutLengthData.heat;
-                            scale2LastStrandNo = cutLengthData.strandNo;
-                            scale2LastSequenceNo = cutLengthData.sequenceNo;
-                        }
-
-                    }
-                    _log.Info("==================================================");
+                    ProcessCollectScaleData(2);
                     #endregion
 
-                   
 
                     //Console.Write(".");
+                    _log.Info("==================================================");
                     Thread.Sleep(_delay);
                 }
 
@@ -308,6 +172,117 @@ namespace PYVS_CCMDataCollector
             catch (Exception e)
             {
                 _log.Error(e.Message);
+            }
+
+
+        }
+
+        private static void ProcessCollectScaleData(int v)
+        {
+            //data initialize
+            CutLengthData cutLengthData = new CutLengthData();
+            cutLengthData.InitData();
+            cutLengthData.scaleNo = (short)v;  //#1 scale
+
+            //Check Heat ID and Strand ID and Sequence No.
+            if (v == 1)
+            {
+                byte[] heatID = plc.ReadBytes(DataType.DataBlock, 244, 198, 6);   //Heat ID #1
+                cutLengthData.heat = S7.Net.Types.String.FromByteArray(heatID)?.Trim() ?? string.Empty;
+                cutLengthData.strandNo = ((ushort)plc.Read("DB244.DBW216")).ConvertToShort();   //strand no.
+                cutLengthData.sequenceNo = ((ushort)plc.Read("DB244.DBW214")).ConvertToShort(); //sequence no.
+            }
+            else
+            {
+                byte[] heatID= plc.ReadBytes(DataType.DataBlock, 244, 310, 6);   //Heat ID #2
+                cutLengthData.heat = S7.Net.Types.String.FromByteArray(heatID)?.Trim() ?? string.Empty;
+                cutLengthData.strandNo = ((ushort)plc.Read("DB244.DBW328")).ConvertToShort();
+                cutLengthData.sequenceNo = ((ushort)plc.Read("DB244.DBW326")).ConvertToShort();
+            }
+
+            _log.Info("Weight scale #{0} : heat number check...{0}", v, cutLengthData.heat.ToString());
+
+            //Check basic information
+            bool heatChangeflag = false; //init
+            if (cutLengthData.heat == null || cutLengthData.heat.Length < 1)
+            {
+                _log.Warn("Scale #{0} Heat ID is empty or null.", v);
+                return;
+            }
+
+            if (cutLengthData.heat.Substring(0, 1).Equals("V")) //Check Heat ID
+            {
+                _log.Info("Scale #{0} Information : {1} / {2} / {3}", v, cutLengthData.heat.ToString(), cutLengthData.strandNo, cutLengthData.sequenceNo);
+
+                if (cutLengthData.strandNo > 0 && cutLengthData.strandNo < 7) //Check strand number
+                {
+                    if (cutLengthData.sequenceNo > 0 && cutLengthData.sequenceNo < 99) //Check sequence number
+                    {
+                        //Compare with before sent information
+                        string scaleLastHeat = v == 1 ? scale1LastHeat : scale2LastHeat;
+                        short scaleLastStrandNo = v == 1 ? scale1LastStrandNo : scale2LastStrandNo;
+                        short scaleLastSequenceNo = v == 1 ? scale1LastSequenceNo : scale2LastSequenceNo;   
+
+                        if (scaleLastHeat.ToString() != cutLengthData.heat.ToString())
+                        {
+                            heatChangeflag = true;
+                        }
+                        else
+                        {
+                            if (scaleLastStrandNo != cutLengthData.strandNo || scaleLastSequenceNo != cutLengthData.sequenceNo)
+                            {
+                                heatChangeflag = true;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (heatChangeflag)
+            {
+                _log.Info("Scale #{0} New SP scaled!!! Start collect data ... ", v);
+
+                //Collect data
+                if (v == 1)
+                {
+                    cutLengthData.lengthTarget = ((uint)plc.Read("DB244.DBD406")).ConvertToInt();           //Target Length [DINT]
+                    cutLengthData.lengthLastcut = ((uint)plc.Read("DB244.DBD414")).ConvertToFloat();        //Last Cut Length [REAL]
+                    cutLengthData.lengthCompensation = ((ushort)plc.Read("DB244.DBW424")).ConvertToShort(); //Compensation Length [INT]
+                    cutLengthData.weight = ((uint)plc.Read("DB244.DBD218")).ConvertToFloat();               //Weight [REAL]
+                }
+                else
+                {
+                    cutLengthData.lengthTarget = ((uint)plc.Read("DB244.DBD494")).ConvertToInt();           //Target Length [DINT]
+                    cutLengthData.lengthLastcut = ((uint)plc.Read("DB244.DBD502")).ConvertToFloat();        //Last Cut Length [REAL]
+                    cutLengthData.lengthCompensation = ((ushort)plc.Read("DB244.DBW512")).ConvertToShort(); //Compensation Length [INT]
+                    cutLengthData.weight = ((uint)plc.Read("DB244.DBD330")).ConvertToFloat();               //Weight [REAL???]
+
+                }
+                _log.Debug("Scale #{0} - Target Length : {1}", v, cutLengthData.lengthTarget);
+                _log.Debug("Scale #{0} - Last Cut Length : {1}", v, cutLengthData.lengthLastcut);
+                _log.Debug("Scale #{0} - Compensation Length : {1}", v, cutLengthData.lengthCompensation);
+                _log.Debug("Scale #{0} - Weight : {1}", v, cutLengthData.weight);
+
+                //data send to MES
+                if (SendMessage(ref cutLengthData))
+                {
+                    _log.Info("Data send complete... {0} / {1} / {2}", cutLengthData.heat.ToString(), cutLengthData.strandNo, cutLengthData.sequenceNo);
+
+                    //Update last information
+                    if (v == 1)
+                    {
+                        scale1LastHeat = cutLengthData.heat;
+                        scale1LastStrandNo = cutLengthData.strandNo;
+                        scale1LastSequenceNo = cutLengthData.sequenceNo;
+                    }
+                    else
+                    {
+                        scale2LastHeat = cutLengthData.heat;
+                        scale2LastStrandNo = cutLengthData.strandNo;
+                        scale2LastSequenceNo = cutLengthData.sequenceNo;
+                    }
+                }
+
             }
 
 
