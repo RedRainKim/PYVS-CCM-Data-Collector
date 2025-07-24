@@ -200,7 +200,7 @@ namespace PYVS_CCMDataCollector
                 cutLengthData.sequenceNo = ((ushort)plc.Read("DB244.DBW326")).ConvertToShort();
             }
 
-            _log.Info("Weight scale #{0} : heat number check...{0}", v, cutLengthData.heat.ToString());
+            _log.Info("Weight scale #{0} : heat number check...{1}", v, cutLengthData.heat.ToString());
 
             //Check basic information
             bool heatChangeflag = false; //init
@@ -257,13 +257,14 @@ namespace PYVS_CCMDataCollector
                     cutLengthData.lengthLastcut = ((uint)plc.Read("DB244.DBD502")).ConvertToFloat();        //Last Cut Length [REAL]
                     cutLengthData.lengthCompensation = ((ushort)plc.Read("DB244.DBW512")).ConvertToShort(); //Compensation Length [INT]
                     cutLengthData.weight = ((uint)plc.Read("DB244.DBD330")).ConvertToFloat();               //Weight [REAL]
-                    cutLengthData.lengthMeasured = ((uint)plc.Read("DB244.DBD12")).ConvertToFloat();         //Measured Length [REAL]
+                    cutLengthData.lengthMeasured = ((uint)plc.Read("DB244.DBD12")).ConvertToFloat();        //Measured Length [REAL]
 
                 }
                 _log.Debug("Scale #{0} - Target Length : {1}", v, cutLengthData.lengthTarget);
                 _log.Debug("Scale #{0} - Last Cut Length : {1}", v, cutLengthData.lengthLastcut);
                 _log.Debug("Scale #{0} - Compensation Length : {1}", v, cutLengthData.lengthCompensation);
                 _log.Debug("Scale #{0} - Weight : {1}", v, cutLengthData.weight);
+                _log.Debug("Scale #{0} - Measured Length : {1}", v, cutLengthData.lengthMeasured);
 
                 //data send to MES
                 if (SendMessage(ref cutLengthData))
@@ -920,23 +921,22 @@ namespace PYVS_CCMDataCollector
                 msgData += msg.strandNo.ToString("D1");             //strand number
                 msgData += msg.sequenceNo.ToString("D2");           //sequence number 
 
-                decData = (int)msg.lengthLastcut;
+                decData = Math.Max(0, (int)msg.lengthLastcut);
                 msgData += decData.ToString("D5");                  //Order length
 
-                if (msg.lengthCompensation < 0) msgData += msg.lengthCompensation.ToString("D4");   //Compensation length
-                else                            msgData += msg.lengthCompensation.ToString("D5");
+                decData = Math.Max(0, (int)msg.lengthCompensation); //Compensation length
+                msgData += decData.ToString("D5");
 
-                decData = (int)msg.lengthTarget;
-                msgData += decData.ToString("D5");                  //Target length
+                decData = Math.Max(0, (int)msg.lengthTarget);       //Target length
+                msgData += decData.ToString("D5");                  
 
                 msgData += msg.scaleNo.ToString("D1");              //scale number
                 
-                decData = (int)msg.weight;
-                if (decData < 0) msgData += decData.ToString("D4"); //weight
-                else             msgData += decData.ToString("D5");        
+                decData = Math.Max(0, (int)msg.weight);             //Weight
+                msgData += decData.ToString("D5");        
                 
-                decData = (int)msg.lengthMeasured;
-                msgData += decData.ToString("D5");                  //Measured length
+                decData = Math.Max(0, (int)msg.lengthMeasured);     //Measured length
+                msgData += decData.ToString("D5");                  
 
 
                 // Insert database

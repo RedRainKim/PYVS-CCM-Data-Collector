@@ -130,3 +130,4 @@ D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.csproj.CoreCompil
 D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCM.7562D0DF.Up2Date
 D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.exe
 D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.pdb
+D:\Dev\PYVS-CCM-Data-Collector\obj\Debug\PYVS_CCMDataCollector.exe.config
