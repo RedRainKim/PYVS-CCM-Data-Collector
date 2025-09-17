@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "D:\\Dev\\PYVS-CCM-Data-Collector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|d:\\dev\\pyvs-ccm-data-collector\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|D:\\Dev\\PYVS-CCM-Data-Collector\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|D:\\Dev\\PYVS-CCM-Data-Collector\\structure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|d:\\dev\\pyvs-ccm-data-collector\\structure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|solutionrelative:structure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Dev\\PYVS-CCM-Data-Collector\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAPAAAAAAAAAAAAAYwAUBAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAABAAAAAAAAAIAywBABAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T07:34:30.819Z",
               "EditorCaption": ""
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Structure.cs",
               "ToolTip": "D:\\Dev\\PYVS-CCM-Data-Collector\\Structure.cs",
               "RelativeToolTip": "Structure.cs",
-              "ViewState": "AgIAAJUAAAAAAAAAAAAAALYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAUwA8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T07:34:31.04Z",
               "EditorCaption": ""

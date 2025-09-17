@@ -4,9 +4,6 @@ using System.Data;
 using System.Data.SqlClient;
 using NLog;
 using S7.Net;
-using static PYVS_CCMDataCollector.Program;
-using System.Xml.Linq;
-using System.Runtime.Remoting.Lifetime;
 
 
 namespace PYVS_CCMDataCollector
@@ -92,29 +89,7 @@ namespace PYVS_CCMDataCollector
                         SendMessageCyc(ref tundishData);
                     }
                     #endregion
-
-                    #region Cyclic result - Ladle open/close count data
-                    //byte[] heatLadle = plc.ReadBytes(DataType.DataBlock, 205, 6, 6);   //Heat ID
-                    //string ladleHeat = S7.Net.Types.String.FromByteArray(heatLadle);
-                    //ladleHeat.Trim();
-
-                    //_log.Info("Ladle open/close count data : Heat {0}", ladleHeat.ToString());
-
-
-                    //double cntCST1AutoOepn = ((uint)plc.Read("DB244.DBD352")).ConvertToFloat();
-                    //double cntCST1AutoClose = ((uint)plc.Read("DB244.DBD374")).ConvertToFloat();
-                    //double cntCST2AutoOpen = ((uint)plc.Read("DB244.DBD396")).ConvertToFloat();
-                    //double cntCST2AutoClose = ((uint)plc.Read("DB244.DBD418")).ConvertToFloat();
-
-                    //double cntCST1ManOpen = ((uint)plc.Read("DB244.DBD440")).ConvertToFloat();
-                    //double cntCST1ManClose = ((uint)plc.Read("DB244.DBD462")).ConvertToFloat();
-                    //double cntCST2ManOpen = ((uint)plc.Read("DB244.DBD484")).ConvertToFloat();
-                    //double cntCST2ManClose = ((uint)plc.Read("DB244.DBD506")).ConvertToFloat();
-
-                    //_log.Info("Data {0}/{1}/{2}/{3}  {4}/{5}/{6}/{7}", (int)cntCST1AutoOepn, (int)cntCST1AutoClose, (int)cntCST2AutoOpen, (int)cntCST2AutoClose, (int)cntCST1ManOpen, (int)cntCST1ManClose, (int)cntCST2ManOpen, (int)cntCST2ManClose);
                     
-                    #endregion
-
                     #region Heat finish result
                     //check last heat information
                     int reportHeatno = GetLastHeat();
