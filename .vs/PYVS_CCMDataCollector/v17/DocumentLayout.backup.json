@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Dev\\PYVS-CCM-Data-Collector\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|D:\\Dev\\PYVS-CCM-Data-Collector\\structure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|solutionrelative:structure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|d:\\dev\\pyvs-ccm-data-collector\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|d:\\dev\\pyvs-ccm-data-collector\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|solutionrelative:nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|D:\\Dev\\PYVS-CCM-Data-Collector\\structure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A28F788-0472-4D9D-AA2B-8B5A5FE817CE}|PYVS_CCMDataCollector.csproj|solutionrelative:structure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +27,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "NLog.config",
+              "DocumentMoniker": "D:\\Dev\\PYVS-CCM-Data-Collector\\NLog.config",
+              "RelativeDocumentMoniker": "NLog.config",
+              "ToolTip": "D:\\Dev\\PYVS-CCM-Data-Collector\\NLog.config",
+              "RelativeToolTip": "NLog.config",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-09-22T08:13:02.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Dev\\PYVS-CCM-Data-Collector\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Dev\\PYVS-CCM-Data-Collector\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGQBAAAAAAAAAAAQwHsBAAC5AAAAAAAAAA==",
+              "ToolTip": "D:\\Dev\\PYVS-CCM-Data-Collector\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAEQCAAAAAAAAAAAWwGYCAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T07:34:30.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Structure.cs",
               "DocumentMoniker": "D:\\Dev\\PYVS-CCM-Data-Collector\\Structure.cs",
               "RelativeDocumentMoniker": "Structure.cs",
               "ToolTip": "D:\\Dev\\PYVS-CCM-Data-Collector\\Structure.cs",
               "RelativeToolTip": "Structure.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAzwB8AAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAywCMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-08T07:34:31.04Z",
               "EditorCaption": ""

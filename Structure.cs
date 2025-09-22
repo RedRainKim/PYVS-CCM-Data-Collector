@@ -22,6 +22,20 @@
             public double moldwaterInletStd6A;   //Mold Water Inlet average temperature A line strand 6
             public double moldwaterInletStd6B;   //Mold Water Inlet average temperature B line strand 6
 
+            public double moldwaterOutletStd1A;   //Mold water outlet average temperature A line strand 1
+            public double moldwaterOutletStd1B;   //Mold Water outlet average temperature B line strand 1
+            public double moldwaterOutletStd2A;   //Mold Water outlet average temperature A line strand 2
+            public double moldwaterOutletStd2B;   //Mold Water outlet average temperature B line strand 2
+            public double moldwaterOutletStd3A;   //Mold Water outlet average temperature A line strand 3
+            public double moldwaterOutletStd3B;   //Mold Water outlet average temperature B line strand 3
+            public double moldwaterOutletStd4A;   //Mold Water outlet average temperature A line strand 4
+            public double moldwaterOutletStd4B;   //Mold Water outlet average temperature B line strand 4
+            public double moldwaterOutletStd5A;   //Mold Water outlet average temperature A line strand 5
+            public double moldwaterOutletStd5B;   //Mold Water outlet average temperature B line strand 5
+            public double moldwaterOutletStd6A;   //Mold Water outlet average temperature A line strand 6
+            public double moldwaterOutletStd6B;   //Mold Water outlet average temperature B line strand 6
+
+            /* Change presure to temperature on 2022-09-18
             public double moldwaterOutletPressureStd1A;  //Mold water outlet average pressure A line strand 1
             public double moldwaterOutletPressureStd1B;  //Mold water outlet average pressure B line strand 1
             public double moldwaterOutletPressureStd2A;  //Mold water outlet average pressure A line strand 2
@@ -34,6 +48,7 @@
             public double moldwaterOutletPressureStd5B;  //Mold water outlet average pressure B line strand 5
             public double moldwaterOutletPressureStd6A;  //Mold water outlet average pressure A line strand 6
             public double moldwaterOutletPressureStd6B;  //Mold water outlet average pressure B line strand 6
+            */
 
             public double castSpeedMinStrand1;  //Cast Speed minimum of strand 1
             public double castSpeedAvgStrand1;  //Cast Speed average of strnad 1
@@ -93,18 +108,18 @@
                 this.moldwaterInletStd6A = 0;
                 this.moldwaterInletStd6B = 0;
 
-                this.moldwaterOutletPressureStd1A = 0;
-                this.moldwaterOutletPressureStd1B = 0;
-                this.moldwaterOutletPressureStd2A = 0;
-                this.moldwaterOutletPressureStd2B = 0;
-                this.moldwaterOutletPressureStd3A = 0;
-                this.moldwaterOutletPressureStd3B = 0;
-                this.moldwaterOutletPressureStd4A = 0;
-                this.moldwaterOutletPressureStd4B = 0;
-                this.moldwaterOutletPressureStd5A = 0;
-                this.moldwaterOutletPressureStd5B = 0;
-                this.moldwaterOutletPressureStd6A = 0;
-                this.moldwaterOutletPressureStd6B = 0;
+                this.moldwaterOutletStd1A = 0;
+                this.moldwaterOutletStd1B = 0;
+                this.moldwaterOutletStd2A = 0;
+                this.moldwaterOutletStd2B = 0;
+                this.moldwaterOutletStd3A = 0;
+                this.moldwaterOutletStd3B = 0;
+                this.moldwaterOutletStd4A = 0;
+                this.moldwaterOutletStd4B = 0;
+                this.moldwaterOutletStd5A = 0;
+                this.moldwaterOutletStd5B = 0;
+                this.moldwaterOutletStd6A = 0;
+                this.moldwaterOutletStd6B = 0;
 
                 this.castSpeedMinStrand1 = 0;
                 this.castSpeedAvgStrand1 = 0;  //Cast Speed average of strnad 1

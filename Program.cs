@@ -55,7 +55,6 @@ namespace PYVS_CCMDataCollector
                 //data structure
                 CCMData ccmData = new CCMData();
                 TundishData tundishData = new TundishData();
-                CutLengthData cutLengthData = new CutLengthData();
 
                 //member variable init
                 scale1LastHeat = "V99999";
@@ -64,8 +63,6 @@ namespace PYVS_CCMDataCollector
                 scale2LastHeat = "V99999";
                 scale2LastStrandNo = 9;
                 scale2LastSequenceNo = 99;
-
-                bool heatChange = false;
 
                 //Main
                 while (true)
@@ -352,18 +349,18 @@ namespace PYVS_CCMDataCollector
                     "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 4 AND VARIABLE_ID = 70),0) AS MW_B_STD4, " +
                     "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 5 AND VARIABLE_ID = 70),0) AS MW_B_STD5, " +
                     "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 6 AND VARIABLE_ID = 70),0) AS MW_B_STD6, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 1 AND VARIABLE_ID = 13 AND VALUE_CODE = 1),0) AS MP_A_STD1, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 2 AND VARIABLE_ID = 13 AND VALUE_CODE = 1),0) AS MP_A_STD2, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 3 AND VARIABLE_ID = 13 AND VALUE_CODE = 1),0) AS MP_A_STD3, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 4 AND VARIABLE_ID = 13 AND VALUE_CODE = 1),0) AS MP_A_STD4, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 5 AND VARIABLE_ID = 13 AND VALUE_CODE = 1),0) AS MP_A_STD5, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 6 AND VARIABLE_ID = 13 AND VALUE_CODE = 1),0) AS MP_A_STD6, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 1 AND VARIABLE_ID = 16 AND VALUE_CODE = 1),0) AS MP_B_STD1, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 2 AND VARIABLE_ID = 16 AND VALUE_CODE = 1),0) AS MP_B_STD2, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 3 AND VARIABLE_ID = 16 AND VALUE_CODE = 1),0) AS MP_B_STD3, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 4 AND VARIABLE_ID = 16 AND VALUE_CODE = 1),0) AS MP_B_STD4, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 5 AND VARIABLE_ID = 16 AND VALUE_CODE = 1),0) AS MP_B_STD5, " +
-                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 6 AND VARIABLE_ID = 16 AND VALUE_CODE = 1),0) AS MP_B_STD6, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 1 AND VARIABLE_ID = 67),0) AS MWO_A_STD1, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 2 AND VARIABLE_ID = 67),0) AS MWO_A_STD2, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 3 AND VARIABLE_ID = 67),0) AS MWO_A_STD3, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 4 AND VARIABLE_ID = 67),0) AS MWO_A_STD4, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 5 AND VARIABLE_ID = 67),0) AS MWO_A_STD5, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 6 AND VARIABLE_ID = 67),0) AS MWO_A_STD6, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 1 AND VARIABLE_ID = 69),0) AS MWO_B_STD1, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 2 AND VARIABLE_ID = 69),0) AS MWO_B_STD2, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 3 AND VARIABLE_ID = 69),0) AS MWO_B_STD3, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 4 AND VARIABLE_ID = 69),0) AS MWO_B_STD4, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 5 AND VARIABLE_ID = 69),0) AS MWO_B_STD5, " +
+                    "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND STRAND_NO = 6 AND VARIABLE_ID = 69),0) AS MWO_B_STD6, " +
                     "ISNULL((SELECT MIN_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND VALUE_CODE = 1 AND STRAND_NO = 1 AND VARIABLE_ID = 5),0) AS STD1_CAST_SPD_MIN, " +
                     "ISNULL((SELECT AVG_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND VALUE_CODE = 1 AND STRAND_NO = 1 AND VARIABLE_ID = 5),0) AS STD1_CAST_SPD_AVG, " +
                     "ISNULL((SELECT MAX_VALUE FROM REP_CCM_STRAND_VARS WHERE REPORT_COUNTER = " + reportno + " AND VALUE_CODE = 1 AND STRAND_NO = 1 AND VARIABLE_ID = 5),0) AS STD1_CAST_SPD_MAX, " +
@@ -445,30 +442,30 @@ namespace PYVS_CCMDataCollector
                             cdata.moldwaterInletStd6B = Convert.ToDouble(reader["MW_B_STD6"]);
                             if (cdata.moldwaterInletStd6B < 0) cdata.moldwaterInletStd6B = 0;
 
-                            cdata.moldwaterOutletPressureStd1A = Convert.ToDouble(reader["MP_A_STD1"]);
-                            if (cdata.moldwaterOutletPressureStd1A < 0) cdata.moldwaterOutletPressureStd1A = 0;
-                            cdata.moldwaterOutletPressureStd1B = Convert.ToDouble(reader["MP_B_STD1"]);
-                            if (cdata.moldwaterOutletPressureStd1B < 0) cdata.moldwaterOutletPressureStd1B = 0;
-                            cdata.moldwaterOutletPressureStd2A = Convert.ToDouble(reader["MP_A_STD2"]);
-                            if (cdata.moldwaterOutletPressureStd2A < 0) cdata.moldwaterOutletPressureStd2A = 0;
-                            cdata.moldwaterOutletPressureStd2B = Convert.ToDouble(reader["MP_B_STD2"]);
-                            if (cdata.moldwaterOutletPressureStd2B < 0) cdata.moldwaterOutletPressureStd2B = 0;
-                            cdata.moldwaterOutletPressureStd3A = Convert.ToDouble(reader["MP_A_STD3"]);
-                            if (cdata.moldwaterOutletPressureStd3A < 0) cdata.moldwaterOutletPressureStd3A = 0;
-                            cdata.moldwaterOutletPressureStd3B = Convert.ToDouble(reader["MP_B_STD3"]);
-                            if (cdata.moldwaterOutletPressureStd3B < 0) cdata.moldwaterOutletPressureStd3B = 0;
-                            cdata.moldwaterOutletPressureStd4A = Convert.ToDouble(reader["MP_A_STD4"]);
-                            if (cdata.moldwaterOutletPressureStd4A < 0) cdata.moldwaterOutletPressureStd4A = 0;
-                            cdata.moldwaterOutletPressureStd4B = Convert.ToDouble(reader["MP_B_STD4"]);
-                            if (cdata.moldwaterOutletPressureStd4B < 0) cdata.moldwaterOutletPressureStd4B = 0;
-                            cdata.moldwaterOutletPressureStd5A = Convert.ToDouble(reader["MP_A_STD5"]);
-                            if (cdata.moldwaterOutletPressureStd5A < 0) cdata.moldwaterOutletPressureStd5A = 0;
-                            cdata.moldwaterOutletPressureStd5B = Convert.ToDouble(reader["MP_B_STD5"]);
-                            if (cdata.moldwaterOutletPressureStd5B < 0) cdata.moldwaterOutletPressureStd5B = 0;
-                            cdata.moldwaterOutletPressureStd6A = Convert.ToDouble(reader["MP_A_STD6"]);
-                            if (cdata.moldwaterOutletPressureStd6A < 0) cdata.moldwaterOutletPressureStd6A = 0;
-                            cdata.moldwaterOutletPressureStd6B = Convert.ToDouble(reader["MP_B_STD6"]);
-                            if (cdata.moldwaterOutletPressureStd6B < 0) cdata.moldwaterOutletPressureStd6B = 0;
+                            cdata.moldwaterOutletStd1A = Convert.ToDouble(reader["MWO_A_STD1"]);
+                            if (cdata.moldwaterOutletStd1A < 0) cdata.moldwaterOutletStd1A = 0;
+                            cdata.moldwaterOutletStd1B = Convert.ToDouble(reader["MWO_B_STD1"]);
+                            if (cdata.moldwaterOutletStd1B < 0) cdata.moldwaterOutletStd1B = 0;
+                            cdata.moldwaterOutletStd2A = Convert.ToDouble(reader["MWO_A_STD2"]);
+                            if (cdata.moldwaterOutletStd2A < 0) cdata.moldwaterOutletStd2A = 0;
+                            cdata.moldwaterOutletStd2B = Convert.ToDouble(reader["MWO_B_STD2"]);
+                            if (cdata.moldwaterOutletStd2B < 0) cdata.moldwaterOutletStd2B = 0;
+                            cdata.moldwaterOutletStd3A = Convert.ToDouble(reader["MWO_A_STD3"]);
+                            if (cdata.moldwaterOutletStd3A < 0) cdata.moldwaterOutletStd3A = 0;
+                            cdata.moldwaterOutletStd3B = Convert.ToDouble(reader["MWO_B_STD3"]);
+                            if (cdata.moldwaterOutletStd3B < 0) cdata.moldwaterOutletStd3B = 0;
+                            cdata.moldwaterOutletStd4A = Convert.ToDouble(reader["MWO_A_STD4"]);
+                            if (cdata.moldwaterOutletStd4A < 0) cdata.moldwaterOutletStd4A = 0;
+                            cdata.moldwaterOutletStd4B = Convert.ToDouble(reader["MWO_B_STD4"]);
+                            if (cdata.moldwaterOutletStd4B < 0) cdata.moldwaterOutletStd4B = 0;
+                            cdata.moldwaterOutletStd5A = Convert.ToDouble(reader["MWO_A_STD5"]);
+                            if (cdata.moldwaterOutletStd5A < 0) cdata.moldwaterOutletStd5A = 0;
+                            cdata.moldwaterOutletStd5B = Convert.ToDouble(reader["MWO_B_STD5"]);
+                            if (cdata.moldwaterOutletStd5B < 0) cdata.moldwaterOutletStd5B = 0;
+                            cdata.moldwaterOutletStd6A = Convert.ToDouble(reader["MWO_A_STD6"]);
+                            if (cdata.moldwaterOutletStd6A < 0) cdata.moldwaterOutletStd6A = 0;
+                            cdata.moldwaterOutletStd6B = Convert.ToDouble(reader["MWO_B_STD6"]);
+                            if (cdata.moldwaterOutletStd6B < 0) cdata.moldwaterOutletStd6B = 0;
 
                             cdata.castSpeedMinStrand1 = Convert.ToDouble(reader["STD1_CAST_SPD_MIN"]);
                             if (cdata.castSpeedMinStrand1 < 0) cdata.castSpeedMinStrand1 = 0;
@@ -609,6 +606,32 @@ namespace PYVS_CCMDataCollector
                 decData = (int)(msg.moldwaterInletStd6B * 100);
                 msgData += decData.ToString("D6");
 
+                decData = (int)(msg.moldwaterOutletStd1A * 100);       //mold wather Outlet strand 1 A line (decimal *2)
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd1B * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd2A * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd2B * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd3A * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd3B * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd4A * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd4B * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd5A * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd5B * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd6A * 100);
+                msgData += decData.ToString("D6");
+                decData = (int)(msg.moldwaterOutletStd6B * 100);
+                msgData += decData.ToString("D6");
+
+                /*
                 decData = (int)(msg.moldwaterOutletPressureStd1A * 10000);  //mold water pressure stand 1 A line (decimal * 4)
                 msgData += decData.ToString("D6");
                 decData = (int)(msg.moldwaterOutletPressureStd1B * 10000);
@@ -633,6 +656,7 @@ namespace PYVS_CCMDataCollector
                 msgData += decData.ToString("D6");
                 decData = (int)(msg.moldwaterOutletPressureStd6B * 10000);
                 msgData += decData.ToString("D6");
+                */
 
                 decData = (int)(msg.castSpeedMinStrand1 * 10000);   //cast speed (decimal * 4)
                 msgData += decData.ToString("D6");
